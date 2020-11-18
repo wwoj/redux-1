@@ -6,12 +6,12 @@ const fetchMovies = async () => {
     { method: "GET" }
   );
   const json = await response.json();
-
+    
   return json;
 };
 
 export const getAllMovies = () => async (dispatch) => {
-  const movies = await fetchMovies();
-console.log(movies)
-//   movies.map((movie) => dispatch(actions.add(movie.title)));
+   const movies = await fetchMovies();
+    console.log("Wynik to: ",movies)
+  movies.map((movie) => dispatch(actions.add(movie)));
 };
