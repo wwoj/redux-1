@@ -2,7 +2,7 @@ import types from './types';
 const INITIAL_STATE = {
     listName:'Actors',
     list:[
-      'Tom Hanks','Julia Roberts','Angelina Jolie'
+      {name:'Tom Hanks',age:18},{name:'Julia Roberts',age:18},{name:'Angelina Jolie',age:18}
     ]
   }
 

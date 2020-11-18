@@ -5,7 +5,7 @@ import moviesReducer from "../../movies/duck/reducers";
 const ActorsContainer = (props) => (
   <ul>
     {props.actors.list.map(actor => 
-      <li>{actor}</li>
+      <li>{actor.age} {actor.name}</li>
     )}
   </ul>
 );
